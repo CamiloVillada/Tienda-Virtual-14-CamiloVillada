@@ -1,0 +1,159 @@
+body {
+background-color: white;
+}
+.barra-titulo{
+  height: 50px;
+  width: 100%;
+  background-color: #33B5FF;
+}
+
+.barra-contenido{
+  height: 50px;
+  width: 101.3%;
+  background-color: #C6C6C6;
+
+}
+.menu{
+  background-color: #C6C6C6;
+}
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  color: black;
+  display: block;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+.menu ul li a:hover{
+	color: white;
+  background-color: #0074A7;
+
+}
+
+.ventas{
+	text-align: center;
+	margin-top: 35px;
+	margin-left: 15%;
+	background-color: #C6C6C6;
+	height: 120px;
+	width: 70%;
+	display: inline-block;
+	
+}
+
+.ventas h3{
+	display: inline-block;
+}
+.titulos{
+	background-color: blue;
+	height: 0px;
+	text-align: left;
+	
+}
+#cod{
+	margin-left: 150px;
+	margin-right: 10px;
+}
+#nomb{
+	margin-left: 110px;
+}
+#titulo2{
+	margin-left: 60px;
+}
+#vlr{
+	margin-left: 40px;
+}
+.ventas1{
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 0;
+	background-color: #C6C6C6;
+	height: 20%;
+	width: 100%;
+	display: inline-block;
+	
+}
+
+.ventas1 h3{
+	display: inline-block;
+}
+.ventas2{
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 0;
+	background-color: #C6C6C6;
+	height: 20%;
+	width: 100%;
+	display: inline-block;
+	
+}
+
+.ventas2 h3{
+	display: inline-block;
+}
+.ventas3{
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 0;
+	background-color: #C6C6C6;
+	height: 200px;
+	width: 100%;
+	display: inline-block;
+	
+}
+
+.ventas3 h3{
+	display: inline-block;
+}
+#codigo{
+	width: 150px;
+}
+#nombre{
+	width: 200px;
+}
+#cant{
+	width: 50px;
+}
+#valor{
+	width: 150px;
+}
+
+.totales{
+	background-color: red;
+	height: 000px;
+	width: 400px;
+	display: inline-block;
+	margin-left: 750px;
+}
+
+.totales h3{
+	display: inline-block;
+	margin-bottom: -10px;
+}
+.botones-ventas{
+	background-color: #C6C6C6;
+	margin-left: 25%;
+	height: 50px;
+	width: 50%;
+	display: inline-block;
+	
+}
+.botones-ventas input{
+	display: inline-block;
+	 color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-left: 145px;
+  margin-top: 0px;
+}
+.botones-ventas input:hover{
+	color: white;
+  background-color: #0074A7;
+
+}
