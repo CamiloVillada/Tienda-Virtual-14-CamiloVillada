@@ -20,7 +20,7 @@ String email_usuario="";
 String usuario="";
 String password="";
 ClienteController cc=new ClienteController();
-UsuarioVO usu=new UsuarioVO();
+DatosVO usu=new DatosVO();
 String opcion=request.getParameter("boton");
 try{
 if(opcion.equals("Consultar")){

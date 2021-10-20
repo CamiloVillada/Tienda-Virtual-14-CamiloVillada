@@ -6,13 +6,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import javax.swing.JOptionPane;
-
 import com.BO.TiendaVirtualSB.*;
-import com.DTO.TiendaVirtualSB.ClienteVO;
-import com.DTO.TiendaVirtualSB.UsuarioVO;
-
+import com.DTO.TiendaVirtualSB.DatosVO;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +18,7 @@ public class UsuariosDAO
 {
 	
 	
-	public void registrarUsuario(UsuarioVO persona) 
+	public void registrarUsuario(DatosVO persona) 
 	 {
 	  Conexion conex= new Conexion();
 	  try {
@@ -35,7 +31,7 @@ public class UsuariosDAO
 	  }
 	 }
 	   
-	 public void modificarUsuario(UsuarioVO persona) {
+	 public void modificarUsuario(DatosVO persona) {
 	     Conexion conex = new Conexion();
 	     try {
 	    	 PreparedStatement sentencia= conex.getConnection().prepareStatement("UPDATE usuarios SET email_usuario = ?, nombre_usuario = ?, password = ?, usuario = ? WHERE cedula_usuario=?");
@@ -52,7 +48,7 @@ public class UsuariosDAO
 	     }
 	 }
 	 
-	 public void eliminarUsuario(UsuarioVO persona) {
+	 public void eliminarUsuario(DatosVO persona) {
 		 Conexion conex = new Conexion();
 		 try {
 			 PreparedStatement sentencia= conex.getConnection().prepareStatement("delete from usuarios WHERE cedula_usuario=?");
@@ -65,9 +61,9 @@ public class UsuariosDAO
 	 	}
 	 }
 	 
-	 public UsuarioVO Consultarusuario(int cedula_usuario) {
+	 public DatosVO Consultarusuario(int cedula_usuario) {
 		    Conexion conex = new Conexion();
-		    UsuarioVO persona = new UsuarioVO();
+		    DatosVO persona = new DatosVO();
 		    try {
 		        PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM usuarios where cedula_usuario = ? ");
 		        consulta.setInt(1, cedula_usuario);
@@ -92,7 +88,7 @@ public class UsuariosDAO
 		}
 
 	 
-	 public boolean validate(UsuarioVO persona){
+	 public boolean validate(DatosVO persona){
 			boolean validacion=true;
 	    try {
 	    	Conexion conex= new Conexion();

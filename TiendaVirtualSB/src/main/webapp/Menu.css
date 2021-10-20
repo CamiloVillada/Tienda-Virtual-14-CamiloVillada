@@ -1,0 +1,40 @@
+body {
+background-color: white;
+}
+.barra-titulo{
+  height: 50px;
+  width: 100%;
+  background-color: #33B5FF;
+}
+
+.barra-contenido{
+  height: 50px;
+  width: 101.3%;
+  background-color: #C6C6C6;
+
+}
+.menu{
+  background-color: #C6C6C6;
+}
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  color: black;
+  display: block;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+.menu ul li a:hover{
+	color: white;
+  background-color: #0074A7;
+
+}
+#img{
+	margin-top: 100px;
+}

@@ -63,10 +63,13 @@ background-color: white;
 #nomb{
 	margin-left: 110px;
 }
+#valor{
+	margin-left: 110px;
+}
 #titulo2{
 	margin-left: 60px;
 }
-#vlr{
+#vlrTotal{
 	margin-left: 40px;
 }
 .ventas1{
@@ -117,10 +120,13 @@ background-color: white;
 #nombre{
 	width: 200px;
 }
+#valor{
+	width: 150px;
+}
 #cant{
 	width: 50px;
 }
-#valor{
+#vlrTotal{
 	width: 150px;
 }
 
